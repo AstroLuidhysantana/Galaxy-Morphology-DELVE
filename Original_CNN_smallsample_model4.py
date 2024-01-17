@@ -70,7 +70,7 @@ print("to test:", len(os.listdir(TESTING_ELIPTICA_DIR)))
 
     
 
-#####defining the model modelo 2 de cabeça para baixo
+
 with strategy.scope():
     model = tf.keras.models.Sequential([
         tf.keras.layers.Conv2D(512, (3, 3), activation='relu', input_shape=(256, 256, 3),padding='same'),
